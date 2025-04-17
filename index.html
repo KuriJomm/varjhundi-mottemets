@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="et">
+<!DOCTYPE html><html lang="et">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -32,12 +31,29 @@
       max-width: 800px;
       margin: auto;
     }
-    .thought-box {
+    .thought-box, .image-share, .mind-line {
       background: #ffffffcc;
       padding: 1.5em;
       border-left: 5px solid #66bb6a;
       margin-bottom: 2em;
       border-radius: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #b2d8b5;
+    }
+    button {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background: #66bb6a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
     }
     footer {
       background-color: #a5d6a7;
@@ -48,31 +64,29 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Varjhundi Mõttemets</h1>
     <p>Koht, kus hing saab puhata ja mõtted leida tee</p>
-  </header>
+  </header>  <div class="image"></div>  <main>
+    <div class="mind-line">
+      <p><strong>„Vaikus ei tähenda tühjust. Vaikus tähendab ruumi, kus süda saab lõpuks hingata.“</strong></p>
+    </div><div class="thought-box">
+  <h2>Jaga oma mõtet:</h2>
+  <textarea placeholder="Kirjuta oma mõte siia..."></textarea><br>
+  <button>Saada</button>
+  <p style="font-size: 0.85em; color: #555;">(* See nupp on hetkel ainult kujundus, hiljem teeme päriseks!)</p>
+</div>
 
-  <div class="image"></div>
+<div class="image-share">
+  <h2>Soovid jagada armsat pilti?</h2>
+  <p>Lisa siia pildi link (nt Imgur.com või muu pildimajutus):</p>
+  <input type="text" placeholder="https://..." /><br>
+  <button>Lisa pilt</button>
+  <p style="font-size: 0.85em; color: #555;">(* Tulevikus saab siia ka pilte päriselt üles laadida!)</p>
+</div>
 
-  <main>
-    <div class="thought-box">
-      <p><em>„Kui oled eksinud maailma saginasse, tule metsa ja kuula iseennast.“</em></p>
-    </div>
-
-    <div class="thought-box">
-      <p><strong>Jaga oma mõtet:</strong><br>
-        <input type="text" placeholder="Kirjuta oma mõte..." style="width:100%; padding:0.5em; margin-top:0.5em;">
-        <button style="margin-top:0.5em; padding:0.5em 1em; background:#66bb6a; color:#fff; border:none;">Saada</button>
-        <p style="font-size: 0.8em; color: #555;">(See nupp on hetkel ainult kujundus, aga saame hiljem teha ka toimivaks!)</p>
-      </p>
-    </div>
-  </main>
-
-  <footer>
+  </main>  <footer>
     &copy; 2025 Varjhunt | Kõik õigused kuuluvad loovusele ja hingele
   </footer>
-
 </body>
 </html>
