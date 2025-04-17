@@ -1,45 +1,49 @@
-add index.html
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Varjhundi Mõttemets</title>
   <style>
     body {
-      background-color: #1e2b1f;
-      color: #f1f1f1;
-      font-family: 'Georgia', serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: #e5f5e0;
+      color: #2e3b2f;
     }
     header {
-      background-color: #2f4a36;
+      background-color: #a5d6a7;
       padding: 2em;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2em;
-      color: #b8e0c4;
+      font-size: 2.5em;
     }
-    .content {
+    .image {
+      width: 100%;
+      height: 300px;
+      background-image: url("https://kurijomm.github.io/varjhundi-mottemets/img/metsapilt.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    main {
+      padding: 2em;
       max-width: 800px;
-      margin: 3em auto;
-      padding: 0 1em;
+      margin: auto;
     }
-    .thought {
-      background-color: #2a3a2e;
-      border-left: 4px solid #81c784;
+    .thought-box {
+      background: #ffffffcc;
       padding: 1.5em;
+      border-left: 5px solid #66bb6a;
       margin-bottom: 2em;
-      font-style: italic;
+      border-radius: 8px;
     }
     footer {
+      background-color: #a5d6a7;
       text-align: center;
-      color: #aaa;
+      padding: 1em;
       font-size: 0.9em;
-      margin: 3em 0 1em;
     }
   </style>
 </head>
@@ -47,25 +51,27 @@ add index.html
 
   <header>
     <h1>Varjhundi Mõttemets</h1>
+    <p>Koht, kus hing saab puhata ja mõtted leida tee</p>
   </header>
 
-  <div class="content">
-    <div class="thought">
-      Mõnikord tundub, et maailm meie ümber on nagu tihe džungel – täis varje, kiskjaid ja salateid, kus eksida on lihtne ja ellu jäämine raske.  
-      Iga samm vajab julgust ja usaldust… iseenda vastu.
+  <div class="image"></div>
+
+  <main>
+    <div class="thought-box">
+      <p><em>„Kui oled eksinud maailma saginasse, tule metsa ja kuula iseennast.“</em></p>
     </div>
 
-    <div class="thought">
-      Aga isegi selles džunglis on valguslaike. Vaikseid kohti, kus hingata. Ja inimesi, kes ei olegi kiskjad – ainult kaotatud, väsinud või lihtsalt vaiksed nagu minagi.
+    <div class="thought-box">
+      <p><strong>Jaga oma mõtet:</strong><br>
+        <input type="text" placeholder="Kirjuta oma mõte..." style="width:100%; padding:0.5em; margin-top:0.5em;">
+        <button style="margin-top:0.5em; padding:0.5em 1em; background:#66bb6a; color:#fff; border:none;">Saada</button>
+        <p style="font-size: 0.8em; color: #555;">(See nupp on hetkel ainult kujundus, aga saame hiljem teha ka toimivaks!)</p>
+      </p>
     </div>
-
-    <div class="thought">
-      Kui sa seda loed ja tunned sarnaselt, siis tea – sa ei ole üksi. Võib-olla me kõnnime erinevatel radadel, aga me oleme ikka osa samast metsast.
-    </div>
-  </div>
+  </main>
 
   <footer>
-    Loodud Varjhundi südames – 2025
+    &copy; 2025 Varjhunt | Kõik õigused kuuluvad loovusele ja hingele
   </footer>
 
 </body>
